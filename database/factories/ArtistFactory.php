@@ -14,13 +14,13 @@ class ArtistFactory extends Factory
      *
      * @return array<string, mixed>
      */
+    
     public function definition(): array
     {
         return [
             'name' => $this->faker->name,
-            'jaar' => $this->faker->jaar,
-            'website' => $this->faker->website,
-
+            'jaar' => $this->faker->year,
+            'website' => $this->faker->url,
         ];
     }
 }
